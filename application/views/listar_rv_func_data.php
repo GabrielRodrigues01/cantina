@@ -26,6 +26,8 @@
                             <th>Data</th>
                             <th>Status</th>
                             <th>Funcionário</th>
+                            <th>RA</th>
+                            <th>Aluno</th>
                             <th>Valor Total</th>
                             <th></th>
                         </tr>
@@ -35,11 +37,15 @@
                             <td><?= $row->data; ?></td>
                             <td><?= $row->status; ?></td>
                             <td><span class="cpf" /><?= $row->funcionario_cpf; ?></td>
+                            <td><?= $row->aluno_ra; ?></td>
+                            <td><?= $row->nome_aluno; ?></td>
                             <td><?= $row->valor_total; ?></td>
                         </tr>
                         <?php } 
                             foreach($registros_pagos as $pagos){ ?>
                         <tr>
+                             <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -49,6 +55,8 @@
                             <?php } 
                             foreach($registros_fiados as $fiados){ ?>
                         <tr>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
